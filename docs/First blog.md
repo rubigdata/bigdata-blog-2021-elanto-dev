@@ -1,0 +1,1 @@
+I am Elina Antonova, s1057069, first-year Comouting Science student. I am 22-years-old and I moved to Nijmegen in 2020 from Estonia, where I used to live my whole life. 
