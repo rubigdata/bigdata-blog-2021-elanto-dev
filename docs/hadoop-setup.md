@@ -25,7 +25,7 @@ It is seen that in created HDFS we only have one datanode, where all information
 
 ![alt text](/images/catoutput.jpg "Title")
 
-After executing Map-Resuce commands I have created the report about HDF system state and the amount of blocks in datanote increased to 19. After finishing the main part I had a look at the commands HDF system has: _hdfs dfs -help | less_. 
+After executing Map-Resuce commands I have created the report about HDF system state and the amount of blocks in datanote increased to 19. After finishing the main part I had a look at the commands HDF system has: _hdfs dfs -help | less_. **All commands starting with _hdfs dfs_ are executed in distributed file system itself. All the commands we use after these words should start with dash, but syntax is same as in Linux system.**
 
 [< back to Assignment 2](assignment2.md)
 
