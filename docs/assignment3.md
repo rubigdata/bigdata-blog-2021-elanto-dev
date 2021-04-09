@@ -45,7 +45,7 @@ _map()_ function takes one element as input, processes it according to custom co
 
 ### ● Explain why there are multiple result files. 
 
-![alt text](/docs/images/lsSpark.png "ls Hadoop")
+![alt text](/images/lsSpark.png "ls Hadoop")
 
 I received this result of _ls_ command and it can be seen, that there is 2 files with data. Spark divides data in the partitions and we have not specified the number of partitions when processing word count, so data was divided into two partitions and saved as _part-00000_ and _part_00001_. 
 
