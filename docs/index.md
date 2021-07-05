@@ -8,3 +8,4 @@ To see the publications please select it from the following list:
 * [Assignment 3](assignment3.md)
 * [Assignment 4](assignment4.md)
 * [Assignment 5](assignment5.md)
+* [Final project](project.md)
