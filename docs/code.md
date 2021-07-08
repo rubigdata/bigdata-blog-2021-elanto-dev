@@ -1,6 +1,6 @@
 [< back to Assignment 4](assignment4.md)
 
-```
+```scala
 %spark
 object CT extends Serializable {
   

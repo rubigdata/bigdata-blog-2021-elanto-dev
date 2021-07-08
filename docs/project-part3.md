@@ -36,7 +36,7 @@ The file names were in the same format as on the original [index page](http://in
 
 Next step was extracting one WARC file to test my code on. I used the same command we used in the first part: 
 
-```
+```scala
 val warcs = sc.newAPIHadoopFile(
               warcfile,
               classOf[WarcGzInputFormat],     // InputFormat
@@ -49,7 +49,8 @@ I wrote some additional code with a filter to select RDDs which had "bruh" or "b
 ### Finally counting
 
 When I managed to read the file, I also checked how the filter works. What I do in the first step: I get HTTP bodies of WARC file records, I filter out empty bodies and then I filter out RDDs containing no "bro" or "bruh": 
-```
+
+```scala
 val wb = warcs
         .map{ wr => wr._2.getRecord().getHttpStringBody()}
         .filter{ _.length > 0 }
@@ -62,7 +63,7 @@ Initially I used _.contains("bro")_, but after printing out the first RDD body I
 
 After RDDs not countaining these words are filtered out, there is less data to work with. Next step is to count how many times the words appeared in the RDDs and they were divided into two separate works. Firstly I counted "bro": from RDD's we had I filtered out the ones containing "bro", then counted the occurences of the substring in RDD text using [this function I found on StackOverflow](https://stackoverflow.com/questions/43323530/finding-how-many-times-a-given-string-is-a-substring-of-another-string-using-sca/43324063), which I slightly modified and after that I increase the general _broCount_ by the number of substrings in RDD. _broCount_ is a variable, which I assign 0 before counting. For "bruh" I did exactly the same operations, but in this case _bruhCount_ is increased. 
 
-```
+```scala
 val bro = wb.filter( _.toLowerCase().contains(" bro "))
             .map{ b => (b, countOccurrences(b, " bro "))}
             .collect().foreach(broCount += _._2)
