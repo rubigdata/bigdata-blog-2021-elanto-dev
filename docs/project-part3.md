@@ -87,7 +87,7 @@ As my program succeeded to give me results with one WARC file, I decided:
 
 So, after running for 20.3 hours my program returned me the result and, surprisingly, didn't fail. The main question of this project was bro or bruh. And the answer is... BRO! 
 
-![alt text](https://rubigdata.github.io/bigdata-blog-2021-elanto-dev/images/brobruh-final.png "bro/bruh one WARC")
+![alt text](https://rubigdata.github.io/bigdata-blog-2021-elanto-dev/images/bruhbro-final.png "bro/bruh one WARC")
 
 The statistics showed that bro is used almost 32 times more. This can be caused, because bro has been longer in the Internet culture and used more often. Moreover, bruh is more situational, so it is used less, while bro can be used to every person on the internet.
 
