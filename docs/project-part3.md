@@ -80,4 +80,14 @@ As my program succeeded to give me results with one WARC file, I decided:
 
 ... and ran for-loop on all the WARC files I got from the first query and ran my code to analyse each of them on the silver queue. I ran my job at around 00:40 on 08-07-2021 and currently at 17:04 on 08-07-2021 I am still waiting. 
 
-The full final code of the program is accessible [here](project-code.md). It is not the prettiest and might be improved, but it helps to answer the question posted in the beginning of this small research.
+### Final results
+
+![alt text](https://rubigdata.github.io/bigdata-blog-2021-elanto-dev/images/job-time.png "bro/bruh one WARC")
+
+So, after running for 20.3 hours my program returned me the result and, surprisingly, didn't fail. The main question of this project was bro or bruh. And the answer is... BRO! 
+
+![alt text](https://rubigdata.github.io/bigdata-blog-2021-elanto-dev/images/brobruh-final.png "bro/bruh one WARC")
+
+The statistics showed that bro is used almost 32 times more. This can be caused, because bro has been longer in the Internet culture and used more often. Moreover, bruh is more situational, so it is used less, while bro can be used to every person on the internet.
+
+Hereby I think I succeeded to reach the goal I made in the beginning of the project and answered the question by big data analysis using Spark technology. The full final code of the program is accessible [here](project-code.md). It is not the prettiest and might be improved, but it helps to answer the question posted in the beginning of this small research.
