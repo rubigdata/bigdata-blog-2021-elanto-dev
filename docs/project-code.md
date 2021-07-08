@@ -1,6 +1,6 @@
 [< Back to Part 3](project-part3.md)
 
-```
+```scala
 package org.rubigdata
 
 import org.apache.spark.SparkConf
